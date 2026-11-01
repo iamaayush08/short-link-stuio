@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short-Link Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Short-Link Studio</h1>
+        <p>URL Shortening & Bot-Traffic Analytics</p>
+    </header>
+
+    <main>
+        <section class="create-section">
+            <h2>Create Short Link</h2>
+
+            <input type="url" id="longUrl"
+                placeholder="Enter your long URL">
+
+            <input type="text" id="customAlias"
+                placeholder="Custom alias (optional)">
+
+            <button onclick="createShortLink()">
+                Generate Short Link
+            </button>
+
+            <p id="result"></p>
+        </section>
+
+        <section class="links-section">
+            <h2>Your Links</h2>
+            <div id="linkList">
+                <p>No links created yet.</p>
+            </div>
+        </section>
+
+        <section class="analytics">
+            <h2>Traffic Analytics</h2>
+
+            <div class="stats">
+                <div>
+                    <h3 id="totalClicks">0</h3>
+                    <p>Total Clicks</p>
+                </div>
+
+                <div>
+                    <h3 id="humanClicks">0</h3>
+                    <p>Human Traffic</p>
+                </div>
+
+                <div>
+                    <h3 id="botClicks">0</h3>
+                    <p>Bot Traffic</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mini Project | Batch 1 | GLA University</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
